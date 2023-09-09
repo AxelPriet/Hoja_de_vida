@@ -1,0 +1,78 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.pageGrid {
+    display: grid;
+    grid-template-areas: "cab cab"
+        "cont cont"
+        "cont cont";
+        grid-template-columns: 2fr 2fr ;
+        grid-template-rows: 0fr 3fr 1fr;
+        width: 100vw;
+        height: 100vh;
+}
+
+.cabecera {
+    background-color: #0c2654;
+    color: #ffffff;
+    border: 5px solid #ffffff;
+    grid-area: cab;
+}
+
+
+.contenido {
+    display: grid;
+    background-color: #ffffff;
+    grid-template-areas: "card1 card2 card4"
+    "card1 card3 card3";
+    grid-area: cont;
+    grid-gap: 5px;
+}
+
+.piePagina {
+    background-color: #0082b1;
+    color: #000000;
+    grid-area: foot;
+}
+
+.card{
+    background-color:#ffffff;
+    border-radius: px;
+    min-width: 150px;
+    min-height: 150px;
+    border: 5px solid #00303d;
+    cursor: pointer;
+    overflow: auto;
+}
+
+.card:hover h2{
+    color:#0e9dc4;
+    text-decoration: underline;
+    
+}
+
+.card1{
+    max-width: 100%;
+    height:auto;
+    grid-area: card1;
+
+}
+
+.card2{
+    grid-area: card2;
+}
+
+.card3{
+    grid-area: card3;
+}
+
+.card4{
+    grid-area: card4;
+}
+
+.cardimg {
+    width: 100%; 
+    height: auto; 
+}
